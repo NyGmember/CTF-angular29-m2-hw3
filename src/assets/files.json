@@ -1,0 +1,115 @@
+{
+    "data": 
+    [
+        {
+            "label": "Text Editor",
+            "data": "Text Editor",
+            "children": [{
+                    "label": "Cursor",
+                    "data": "Cursor",
+                    "items":[{
+                        "label": "Cursor Blinking",
+                        "data": "Control the cursor animation style.",
+                        "type": "select",
+                        "value":[{"name":"Blink", "active": true}, {"name":"Smooth", "active": false}, {"name":"Phase", "active": false}, {"name":"Expand", "active": false}, {"name":"Solid", "active": false}]
+                    },
+                    {
+                        "label": "Cursor Smooth Caret Animetion",
+                        "data": "Controls whether the smooth caret animetion should be enabled.",
+                        "type": "checkbox",
+                        "value": false
+                    },
+                    {
+                        "label": "Cursor Surrounding Lines",
+                        "data": "Controls the minimal number of visible leading and trailing lines surrounding the cursor. Known as 'scrollOff' or 'scrollOffset' in some other editors.",
+                        "type": "number",
+                        "value": 0
+                    }]
+                },
+                {
+                    "label": "Find",
+                    "data": "Find",
+                    "items": [{
+                        "label": "Add Extra Space On Top",
+                        "data": "Controls whether the smooth caret animetion should be enabled.",
+                        "type": "checkbox",
+                        "value": false
+                    }]
+                },
+                {
+                    "label": "Font",
+                    "data": "Font",
+                    "items": []
+                },
+                {
+                    "label": "Formatting",
+                    "data": "Formatting",
+                    "items": []
+                },
+                {
+                    "label": "Diff Editor",
+                    "data": "Diff Editor",
+                    "items": []
+                },
+                {
+                    "label": "Minimap",
+                    "data": "Minimap",
+                    "items": []
+                },
+                {
+                    "label": "Suggestions",
+                    "data": "Suggestions",
+                    "items": []
+                },
+                {
+                    "label": "Files",
+                    "data": "Files",
+                    "items": []
+                }],
+            "items":[{
+                "label": "Accessibillity Support",
+                "data": "Controls whether the editor should run in a mode where it is optimized for screen readers. Setting to on will disable word wrapping.",
+                "type": "select",
+                "value":[{"name":"Auto", "active": true}, {"name":"On", "active": true}, {"name":"Off", "active": false}]
+            },
+            {
+                "label": "Code Lens",
+                "data": "Controls whether the editor shows CodeLens.",
+                "type": "checkbox",
+                "value": true
+            },
+            {
+                "label": "Code Lens Font Family",
+                "data": "Controls the font family for CodeLens.",
+                "type": "text",
+                "value": "Symbols"
+            },
+            {
+                "label": "Code Lens Font size",
+                "data": "Controls the font size in pixels for CodeLens. When set to '0', the 90% of '#editor.fontSize#' is used.",
+                "type": "number",
+                "value": 1
+            }]
+        },
+        {
+            "label": "Workbench",
+            "data": "Workbench"
+        },
+        {
+            "label": "Window",
+            "data": "Window"
+        },
+        {
+            "label": "Features",
+            "data": "Features"
+        },
+        {
+            "label": "Application",
+            "data": "Application"
+        },
+        {
+            "label": "Extensions",
+            "data": "Extensions"
+        }
+    ]
+}

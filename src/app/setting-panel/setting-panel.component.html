@@ -1,0 +1,21 @@
+<div *ngFor="let s of setting">
+    <div class="card">
+        <div class="card-body">
+            <h5>{{ s.label }}</h5>
+        </div>
+    </div>
+    <div *ngFor="let item of s.items">
+        <app-setting-item [item]="item"></app-setting-item>
+    </div>
+    <div *ngFor="let c of s.children">
+        <div class="card">
+            <div class="card-body">
+                <h5>{{ c.label }}</h5>
+            </div>
+        </div>
+        <div *ngFor="let item of c.items">
+            <app-setting-item [item]="item"></app-setting-item>
+        </div>
+        
+    </div>
+</div>

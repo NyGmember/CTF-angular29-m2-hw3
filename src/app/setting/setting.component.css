@@ -1,0 +1,18 @@
+.tab-button{
+    background-color: white;
+    border: 0px;
+    width: 200px;
+}
+
+.tab-button-selected{
+    border-bottom: 3px solid darkgrey;
+}
+
+.setting-section{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.tree-section{
+    padding: 10px;
+}

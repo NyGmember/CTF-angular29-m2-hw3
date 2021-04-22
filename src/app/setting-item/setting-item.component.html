@@ -1,0 +1,25 @@
+<div class="card">
+    <!--Type = select-->
+    <div class="card-body" *ngIf="item.type == 'select'">
+        <h5 class="card-title">{{ item.label }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ item.data }}</h6>
+        <p-dropdown [options]="item.value" optionLabel="name" optionValue="name"></p-dropdown>
+    </div>
+    <!--Type = checkbox-->
+    <div class="card-body" *ngIf="item.type == 'checkbox'">
+        <h5 class="card-title">{{ item.label }}</h5>
+        <p-checkbox name="{{ item.label }}" value="val1" label="{{ item.data }}"></p-checkbox>
+    </div>
+    <!--Type = text-->
+    <div class="card-body" *ngIf="item.type == 'text'">
+        <h5 class="card-title">{{ item.label }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ item.data }}</h6>
+        <input type="text" pInputText value="{{ item.value }}"/>
+    </div>
+    <!--Type = number-->
+    <div class="card-body" *ngIf="item.type == 'number'">
+        <h5 class="card-title">{{ item.label }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ item.data }}</h6>
+        <p-inputNumber [(ngModel)]="selectedValue" [step]="1" [showButtons]="true" [min]="0"></p-inputNumber>
+    </div>
+</div>

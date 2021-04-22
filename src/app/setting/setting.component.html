@@ -1,0 +1,19 @@
+<div class="container">
+    <div>
+        <button class="tab-button tab-button-selected">User setting</button>
+        <button class="tab-button">Workspace setting</button>
+    </div>
+    <div class="container-fluid setting-section">
+        <div class="row">
+            <div class="col-3 tree-section">
+                <app-category-tree
+                (OnSelected)="selectSetting($event)"></app-category-tree>
+            </div>
+            <div class="col">
+                <app-setting-panel [setting]="files1"></app-setting-panel>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
